@@ -1,7 +1,5 @@
 services:
-  img:
+  snow-wake:
     env_file: .env
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: 'doverto1/snow-wake'
     entrypoint: python /app/snow-wake.py
