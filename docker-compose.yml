@@ -1,0 +1,7 @@
+services:
+  img:
+    env_file: .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: python /app/snow-wake.py
